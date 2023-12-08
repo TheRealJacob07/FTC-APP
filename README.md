@@ -5,7 +5,7 @@ Using the First API this program sends API calls and uses the json return for a 
 
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo]([https://github.com/TheRealJacob07/FTC-APP/blob/main/Images/Overload.png))
 
 
 ## 🚀 About Us
@@ -36,5 +36,5 @@ If not already installed please install Python at: https://www.python.org/downlo
 
 ## Screenshots
 
-![App Screenshot](https://github.com/TheRealJacob07/FTC-APP/blob/main/Screenshot%202023-12-08%20115836.png)
+![App Screenshot](https://github.com/TheRealJacob07/FTC-APP/blob/main/Images/Screenshot.png)
 
