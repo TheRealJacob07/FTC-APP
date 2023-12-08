@@ -5,7 +5,7 @@ Using the First API this program sends API calls and uses the json return for a 
 
 
 
-[![Logo]([https://github.com/TheRealJacob07/FTC-APP/blob/main/Images/Overload.png)]
+![Logo]([https://github.com/TheRealJacob07/FTC-APP/blob/main/Images/Overload.png])
 
 
 ## 🚀 About Us
