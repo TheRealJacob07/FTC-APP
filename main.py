@@ -5,5 +5,5 @@ import window
 username = "therealjacob07"
 key = "E8F5637E-9AA2-4E1E-8132-90106C5BDB92"
 
-data = api.matchAPI(str(2023), 'USTXNBM1', username, key, str(9161), 2)
-window.Match(data)
+
+window.Match(api.matchAPI(str(2023), 'USTXNBM1', username, key, str(9161)))

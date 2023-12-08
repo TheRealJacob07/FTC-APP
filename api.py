@@ -2,7 +2,7 @@
 import requests
 import json
 
-def matchAPI(year, eventID, username, key, teamNum, matchNum):
+def matchAPI(year, eventID, username, key, teamNum):
     #Get match data for specified year, event, team, and match number.
 
     # Create request for specified match data
@@ -18,7 +18,7 @@ def matchAPI(year, eventID, username, key, teamNum, matchNum):
     jsonloads = json.loads(jsondump)
 
     # Get the match data for the specified match number
-    data_return = jsonloads['matches'][int(matchNum - 1)]
+    data_return = jsonloads['matches']
 
     # Return the match data
     return data_return
