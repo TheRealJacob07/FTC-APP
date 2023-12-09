@@ -50,7 +50,7 @@ def filterData(data_return):
     for i in range(int(len(teams)/4)):
         re.append([teams[0+(4*i)],teams[1+(i*4)],teams[2+(i*4)],teams[3+(i*4)]])
         cl.append([colorsb[0+(4*i)], colorsb[1+(4*i)], colorsb[2+(4*i)], colorsb[3+(4*i)]])
-    print(re)
+    
         
     temp = []
     temp2 = []
@@ -59,4 +59,21 @@ def filterData(data_return):
         temp2.append([description[i], str(redFinal[i]), str(redAuto[i]), str(redFoul[i]), str(blueFinal[i]), str(blueAuto[i]), str(blueFoul[i])])
     
     return temp, temp2
+
+def detailed(year, username, key, match):
+
+    req = requests.get("http://ftc-api.firstinspires.org/v2.0/"+year+"/events", auth=(username, key), params={'teamnumber' : match})
+
+    data = req.json()
     
+    jsondump = json.dumps(data, sort_keys= True)
+
+    jsonloads = json.loads(jsondump)
+
+    data_return = jsonloads['events']
+    
+    values = []
+    for i in data_return:
+        values.append(i['code'])
+
+    return values
