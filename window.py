@@ -86,7 +86,7 @@ def rank(code):
     
     layout = [  [sg.Table(data, ["Rank", "Team Number" ,"W-L-T", "TB1", "TB2", "TB3", "TB4", "TB5"], alternating_row_color= 'Purple', expand_y = True, element_justification='c')]]
     
-    window = sg.Window('Rankings', layout, element_justification='c')
+    window = sg.Window('Rankings', layout)
     
     while True:
         event, value = window.read()
